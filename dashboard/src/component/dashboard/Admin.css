@@ -1,0 +1,151 @@
+/* Admin.css */
+
+.admin-container {
+  padding: 2rem;
+  background-color: #f1f5f9; /* Light grey base */
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Header & Badge */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.admin-badge {
+  background-color: #8b5cf6; /* Purple */
+  color: white !important;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- The 5 Stat Cards --- */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Force text to be visible on colored backgrounds */
+.card h3, .card p {
+  color: white !important;
+  margin: 0;
+}
+
+.card h3 { font-size: 0.85rem; opacity: 0.9; }
+.card p { font-size: 2rem; font-weight: 800; margin-top: 5px; }
+
+/* Requirement Colors */
+.card.green { background-color: #10b981; }
+.card.yellow { background-color: #f59e0b; }
+.card.blue { background-color: #3b82f6; }
+.card.purple { background-color: #8b5cf6; }
+
+/* --- Admin List & Actions --- */
+.admin-report-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1.5rem;
+}
+
+.admin-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.admin-actions select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: #fff;
+}
+
+.delete-btn {
+  background-color: #fff1f2;
+  color: #e11d48;
+  border: 1px solid #fecdd3;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #e11d48;
+  color: white;
+}
+
+/* --- Modal Pop-up Styles --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.modal h3 { color: #1e293b; margin-bottom: 10px; }
+.modal p { color: #64748b; margin-bottom: 20px; }
+
+.modal-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.confirm-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #e2e8f0;
+  color: #475569;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,134 @@
+/* 1. Main Card Container */
+.report-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.report-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Header Area (Status & Date) */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.report-date {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* 3. Status Tag Bubbles */
+.status-tag {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Logic Colors based on getStatusClass */
+.pending {
+  background-color: #fef3c7;
+  color: #d97706; /* Orange */
+}
+
+.in-progress {
+  background-color: #dbeafe;
+  color: #2563eb; /* Blue */
+}
+
+.resolved {
+  background-color: #d1fae5;
+  color: #059669; /* Green */
+}
+
+/* 4. Content Styles */
+.report-title {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin: 0;
+  font-weight: 700;
+}
+
+.report-location {
+  font-size: 0.95rem;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.report-category {
+  font-size: 0.85rem;
+  color: #64748b;
+  background: #f8fafc;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.report-description {
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+
+/* 5. Admin Controls (Bottom Section) */
+.admin-controls {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.status-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.delete-btn {
+  background-color: #fff1f2;
+  color: #e11d48;
+  border: 1px solid #fecdd3;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #e11d48;
+  color: #ffffff;
+}

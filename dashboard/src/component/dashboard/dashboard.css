@@ -1,0 +1,137 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  padding: 3rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Header & Welcome Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.new-issue-btn {
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
+}
+
+.new-issue-btn:hover {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+}
+
+/* --- Stat Pills (The 4 rounded badges) --- */
+.stat-pills {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  background: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px; /* This makes it look like a pill */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+}
+
+/* Colored numbers inside the pills */
+.pill span {
+  margin-left: 8px;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.pill .total { color: #10b981; }    /* Green */
+.pill .orange { color: #f59e0b; }   /* Orange */
+.pill .blue { color: #3b82f6; }     /* Blue */
+.pill .green { color: #10b981; }    /* Green */
+
+/* --- Filters & Search Bar --- */
+.filters-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.filters-section input {
+  flex: 2;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.filters-section input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.filters-section select {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.results-count {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+/* --- Grid Layout for ReportCards --- */
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* --- Empty State (No results) --- */
+.empty-state {
+  text-align: center;
+  padding: 4rem;
+  color: #94a3b8;
+  font-size: 1.25rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+  border: 2px dashed #cbd5e1;
+}
+
+.empty-state span {
+  display: block;
+  margin-top: 0.5rem;
+}
