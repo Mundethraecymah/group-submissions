@@ -1,0 +1,62 @@
+
+export const mockReports = [
+  {
+    id: 1,
+    title: 'Pothole on Main Street',
+    description: 'Large pothole near the junction of Main St and Church Ave. Very dangerous for motorcycles.',
+    category: 'Road Damage',
+    location: 'Main Street, Bamenda',
+    status: 'pending',
+    date: '2024-06-01',
+    reporter: 'John Fru',
+  },
+  {
+    id: 2,
+    title: 'Garbage dump near school',
+    description: 'Uncollected garbage near Upstation Primary School. Smells bad and attracts flies.',
+    category: 'Waste Management',
+    location: 'Upstation, Bamenda',
+    status: 'in-progress',
+    date: '2024-06-05',
+    reporter: 'Mary Nkeng',
+  },
+  {
+    id: 3,
+    title: 'Street light outage',
+    description: 'Street lights on Congress Street have been off for two weeks.',
+    category: 'Electricity Outage',
+    location: 'Congress Street, Bamenda',
+    status: 'resolved',
+    date: '2024-05-20',
+    reporter: 'Peter Mbah',
+  },
+  {
+    id: 4,
+    title: 'Broken water pipe',
+    description: 'Water pipe burst near Mile 4 market. Water has been wasting for 3 days.',
+    category: 'Water Supply',
+    location: 'Mile 4, Bamenda',
+    status: 'pending',
+    date: '2024-06-08',
+    reporter: 'Grace Tabi',
+  },
+  {
+    id: 5,
+    title: 'Armed robbery reports at night',
+    description: 'Residents report armed robberies on Commercial Avenue between 9pm and 11pm.',
+    category: 'Security Issues',
+    location: 'Commercial Avenue, Bamenda',
+    status: 'in-progress',
+    date: '2024-06-10',
+    reporter: 'Samuel Bah',
+  },
+];
+
+export const categories = [
+  'Road Damage',
+  'Waste Management',
+  'Security Issues',
+  'Electricity Outage',
+  'Water Supply',
+  'Other',
+];
