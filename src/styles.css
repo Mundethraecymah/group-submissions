@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --ink: #12203A;
+  --ink-soft: #1C3358;
+  --paper: #F1EFE9;
+  --paper-raised: #FFFFFF;
+  --gold: #B8902E;
+  --gold-soft: #E4CE93;
+  --slate: #4B5568;
+  --verified: #3D6B4F;
+  --hairline: #D9D4C7;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
